@@ -1,30 +1,35 @@
-# AC-Racer
+# ACRacer
 
 ## Description
 Autonomous car racing in Assetto Corsa (AC)
 
-
 ## Overview
 Two main folders:
 
-1. `apps` : Applications running on AC.
-    - `lua` : Lua scripts. (Enable CSP in Content Manager to activate Lua apps.)
-        - `teleport_vehicles` : Function for random vehicle spawn initialization.
-        - `track_extractor` : Function for extracting track data.
-    - `python` : Python scripts.
-        - `DataParser` : Function for parsing data from AC into JSON files in real time.
-            - `ac_api` : Parsing scripts using Python and Shared Memory APIs.
-            - `data_bucket` : Directory for saving parsed data.
-            - `third_party` : Third-party libraries.
-            - `tracks` : Track data.
-        - `IS_AddShortcutKey` : Function for adding shortcut keys.
+`apps` : Applications running on AC.
 
-2. `gym` : Gym for Reinforcement Learning.
-    - `algorithm` : RL algorithms.
-    - `env` : Virtual environment and controller.
-    - `log` : Directory for saving data.
-    - `utils` : Various utility scripts.
+- `lua` : Lua scripts. (Enable CSP in Content Manager to activate Lua apps.)
 
+    - `teleport_vehicles` : Function for random vehicle spawn initialization.
+    - `track_extractor` : Function for extracting track data.
+    
+- `python` : Python scripts.
+  
+    - `DataParser` : Function for parsing data from AC into JSON files in real time.
+      
+        - `ac_api` : Parsing scripts using Python and Shared Memory APIs.
+        - `data_bucket` : Directory for saving parsed data.
+        - `third_party` : Third-party libraries.
+        - `tracks` : Track data.
+          
+    - `IS_AddShortcutKey` : Function for adding shortcut keys.
+
+`gym` : Gym for Reinforcement Learning (RL).
+
+- `algorithm` : RL algorithms.
+- `env` : Virtual environment and controller.
+- `log` : Directory for saving data.
+- `utils` : Various utility scripts.
 
 ## Requirements
 - Windows > 7
@@ -39,7 +44,6 @@ Below is our experiment setup. (Recommanded)
 - CUDA 12.1
 - CPU : 12th Gen Intel(R) Core(TM) i9-12900K
 - GPU : NVIDIA GeForce RTX 3080 Ti
-
 
 ## Getting started
 1. Drag & drop `comfy_map.zip` into content manager. Source: [RaceDepartment](https://www.racedepartment.com/downloads/comfy-map.52623/).
