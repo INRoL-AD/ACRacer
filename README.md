@@ -61,6 +61,6 @@ Below is our experiment setup. (Recommanded)
     pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
     ```
 8. Done! Start RL training :
-    ``bash
+    ```bash
     python main.py
     ```
